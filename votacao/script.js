@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const nomes = [];
     const numeros = [];
-    const tabelaCandidatos = document.getElementById('tabelaCandidatos').getElementsByTagName('tbody')[0];
+    const listaCandidatos = document.getElementById('listaCandidatos');  // Elemento UL onde os candidatos serão listados
     const nomeCandidato = document.getElementById('nomeCandidato');
     const numeroCandidato = document.getElementById('numeroCandidato');
 
@@ -13,17 +13,15 @@ document.addEventListener("DOMContentLoaded", function() {
             nomes.push(nome);
             numeros.push(numero);
 
-            const novaLinha = tabelaCandidatos.insertRow();
-            const celulaNome = novaLinha.insertCell(0);
-            const celulaNumero = novaLinha.insertCell(1);
+            const novoItem = document.createElement('li');
+            novoItem.textContent = `${nome} (${numero})`;
 
-            celulaNome.textContent = nome;
-            celulaNumero.textContent = numero;
+            listaCandidatos.appendChild(novoItem);
 
             nomeCandidato.value = '';
             numeroCandidato.value = '';
         } else {
             alert("Por favor, preencha corretamente o nome e número do candidato.");
         }
-      };
-    });
+    };
+});
