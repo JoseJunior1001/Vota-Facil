@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votação</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-  </style>
 </head>
 <body>
     <header>
@@ -24,20 +13,12 @@
         <div class="cadastro">
             <input type="text" name="nomeCandidato" id="nomeCandidato">
             <input type="number" name="numeroCandidato" id="numeroCandidato">
-            <button onclick="cadastroCandidato()">Cadastrar Candidato</button>
+            <button onclick="cadastrarCandidato()">Cadastrar Candidato</button>
         </div>
         <h2>Lista de Candidatos</h2>
-        <table id="tabelaCandidatos">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Número</th>
-                </tr>
-            </thead>
-            <tbody>
+        <ul id="listaCandidatos">
             
-            </tbody>
-        </table>
+        </ul>
     </main>
     <script src="script.js"></script>
 </body>
