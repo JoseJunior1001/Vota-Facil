@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Configuração da votacão</h1>
+    </header>
+    <main>
+        <div class="cadastro">
+            <input type="text" name="nomeCandidato" id="nomeCandidato">
+            <input type="number" name="numeroCandidato" id="numeroCandidato">
+            <button onclick="cadastroCandidato()">Cadastrar Candidato</button>
+        </div>
+        <h2>Lista de Candidatos</h2>
+        <table id="tabelaCandidatos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
