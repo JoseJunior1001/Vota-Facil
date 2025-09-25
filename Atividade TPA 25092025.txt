@@ -1,0 +1,21 @@
+Objetivo: Criar um sistema simples de votação para que os alunos possam votar nos candidatos para escolher o representante de sala. O sistema deve registrar os votos, calcular as porcentagens e exibir o vencedor ou, se necessário, um empate.
+
+Requisitos:
+1 - Entrada de Candidatos:
+O programa deve permitir que o usuário digite o número de candidatos.
+O usuário então deve inserir o nome de cada candidato.
+Armazenar os nomes dos candidatos em um vetor.
+ 
+2 -  Votação
+Após o cadastro dos candidatos o sistema deverá ir para a votação.
+Para votar é necessário digitar o Código do cidadão e depois mostrar os candidatados para votar.
+Deverá colocar numeros para votar. Ex.: João Carlos Gomes - candidato 03 - Para votar nele digite o 3.
+
+3 - Contagem de Votos:
+O programa deve contar quantos votos cada candidato recebeu.
+Ao final, o programa deve exibir o candidato vencedor ou, se houver empate, uma mensagem de empate.
+
+4 - Exibição de Resultados:
+Exibir o número de votos de cada candidato.
+Exibir a porcentagem de votos de cada candidato.
+Exibir o vencedor ou informar se houve empate.
